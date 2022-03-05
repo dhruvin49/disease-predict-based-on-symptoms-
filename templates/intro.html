@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+    
+    <!-- <ul class="breadcrumb">
+        <li class="active"><a href="/home">Home</a></li>
+        <li class="active"><a href="/info">Info</a></li>
+        <li class="active"><a href="/symps">Symptoms</a></li>
+        <li class="active"><a href="/home">Interview</a></li>
+        <li class="active"><a href="/home">Result</a></li>
+    </ul> -->
+
+
+    <div class="info">
+        <div class="container">
+            <div class="header">
+                <div class="row">
+                    <div class="col-sm-8">
+                            <h3>Welcome to <span>Disease Predictor </span></h3>
+                            <p>You’re about to use a short (3 min), safe and anonymous health checkup. Your answers will be carefully analyzed and you’ll learn about possible causes of your symptoms.</p>            
+                    </div>
+                    <div class="col-sm-4 welcome-doctor">
+                        <img src="{{ url_for('static', filename='images/doctor-m.png') }}" alt="doctor">
+                    </div>
+                </div>
+                <hr>
+                <button class="btn btn-primary">
+                
+                    <a href="/symps">Next</a>
+                  
+                </button>
+            </div>
+        </div>
+    </div>
+
+      {% endblock content %}
